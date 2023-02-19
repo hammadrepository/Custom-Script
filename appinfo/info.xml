@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<info xmlns:xsi= "http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="https://apps.nextcloud.com/schema/apps/info.xsd">
+    <!--
+    SPDX-FileCopyrightText: Hammad Rashid <hrrashid.c@stc.com.sa>
+    SPDX-License-Identifier: CC0-1.0
+    -->
+    <id>stccustomscripts</id>
+    <name>Stc Custom Scripts</name>
+    <summary>Custom scripts for stc requirements</summary>
+    <description><![CDATA[This app consists of multiple custom scripts according to STC needs.]]></description>
+    <version>0.0.1</version>
+    <licence>agpl</licence>
+    <author mail="hrrashid.c@stc.com.sa" >Hammad Rashid</author>
+    <namespace>StcCustomScripts</namespace>
+    <category>tools</category>
+    <bugs>http://localhost/nextcloud/issues</bugs>
+    <dependencies>
+        <nextcloud min-version="24" max-version="24"/>
+    </dependencies>
+        <commands>
+        <command>OCA\StcCustomScripts\Command\UpdateText</command>
+        <command>OCA\StcCustomScripts\Command\CreateBulkUsers</command>
+        <command>OCA\StcCustomScripts\Command\SetBulkUsersQuota</command>
+    </commands>
+    <!-- <navigations>
+        <navigation>
+            <name>Stc Custom Scripts</name>
+            <route>stccustomscripts.page.index</route>
+        </navigation>
+    </navigations> -->
+</info>
