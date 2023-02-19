@@ -124,7 +124,7 @@ class SetBulkUsersQuota extends Command {
 						$s = sprintf($this->COMMAND_FINAL, $column1,$column2);
 
 						// regex to validate input like 20GB
-						$regex = '/\\d\\dGB/i';
+						$regex = '/^\d(?:(?:\d\d\dG|(?:\d(?:\d)?G|G))|\.\dG)B$/m';
 						if(!preg_match($regex, $column2)){
 							$response = "fails";
 						}else{
